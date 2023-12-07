@@ -11,5 +11,12 @@ public class Main {
         if(isValidFirstName == false){
             System.out.println("Please enter valid name first name (starting with Capital letter and has minimum 3 letters).");
         }
+
+        System.out.println("Enter Last name: ");
+        boolean isValidLastName = Pattern.matches("^[A-Z]{1}[a-z]{0,20}",sc.nextLine());
+        if(isValidLastName == false){
+            System.out.println("Please enter valid surname (Last name should starts with captial letter and has minimum 3 characters).");
+        }
+
     }
 }
