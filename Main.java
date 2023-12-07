@@ -18,5 +18,10 @@ public class Main {
             System.out.println("Please enter valid surname (Last name should starts with captial letter and has minimum 3 characters).");
         }
 
+        System.out.println("Enter email id: ");
+        boolean isValidEmailId = Pattern.matches("^[a-z]{0,40}[@]{1}[a-z]{0,15}[.]{1}[a-z]{5}",sc.nextLine());
+        if(isValidEmailId==false){
+            System.out.println("Please enter valid email id.");
+        }
     }
 }
