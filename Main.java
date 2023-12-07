@@ -29,6 +29,13 @@ public class Main {
         if(isValidMblNumber == false){
             System.out.println("Please enter valid mobile number - Eg. 91 9919819801, Country code followed by space and 10 digit number");
         }
-        
+
+        System.out.println("Please enter password: ");
+        boolean isValidPassword = Pattern.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$",sc.nextLine());
+        if(isValidPassword == false){
+            System.out.println("Please enter valid password (Should have minimum 8 Characters,at least 1 Upper Case,at least 1 numeric number, Has exactly 1 Special Character).");
+        }
+
+
     }
 }
